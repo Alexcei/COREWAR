@@ -30,9 +30,9 @@ unistd.h
 fcntl.h
 /Users/bpole/CLionProjects/corewar/ft_printf/libft/fcntl.h
 
-/Users/bpole/CLionProjects/corewar/op.h
-
-/Users/bpole/CLionProjects/corewar/render.c
+/Users/bpole/CLionProjects/corewar/main.c
 corewar.h
 /Users/bpole/CLionProjects/corewar/corewar.h
+
+/Users/bpole/CLionProjects/corewar/op.h
 

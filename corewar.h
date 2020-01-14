@@ -7,11 +7,15 @@
 
 # define TEXT_COLOR			0xEAEAEA
 # define BACKGROUND			0x0
-# define SQW				0x1155ff
+# define CELL_DEF			0x808080
+# define CELL_PLAY_1		0x1155ff
+# define CELL_PLAY_2		0x55ff11
+# define CELL_PLAY_3		0xff1155
+# define CELL_PLAY_4		0xffff00
 
-# define LEN		128
-# define WIDTH 		LEN*20
-# define HEIGHT		1200
+# define LEN		64
+# define WIDTH 		2000
+# define HEIGHT		1350
 # define SIZE 				HEIGHT * WIDTH
 
 # define MIN_PLAYERS 2
@@ -50,31 +54,12 @@ typedef struct		s_cursor
 	struct s_cursor	*next;
 }					t_cursor;
 
-typedef struct			s_mouse
+typedef struct		s_cell
 {
-	char				put_left;
-	char				put_right;
-	int					x;
-	int					y;
-	int					previous_x;
-	int					previous_y;
-}						t_mouse;
-
-typedef struct			s_camera
-{
-	int					zoom;
-	double				alpha;
-	double				beta;
-	double				x_offset;
-	double				y_offset;
-}						t_camera;
-
-typedef struct			s_dot
-{
-	double				x;
-	double				y;
-	double				z;
-}						t_dot;
+	int 			player;
+	char 			value;
+	int 			color;
+}					t_cell;
 
 typedef struct		s_main
 {
@@ -86,22 +71,19 @@ typedef struct		s_main
 	int				dump;
 	int 			v;
 	
-	t_camera			*camera;
-	t_mouse 			*mouse;
-	int 				speed;
-	int					width;
-	int					height;
-	int 				pause;
-	int 				one_step;
-	int					z_min;
-	int					z_max;
-	void				*mlx;
-	void				*win;
-	void				*img;
-	char				*data_addr;
-	int					bits_per_pixel;
-	int					size_line;
-	int					endian;
+	t_cell			cell[MEM_SIZE];
+	int 			speed;
+	int				width;
+	int				height;
+	int 			pause;
+	int 			one_step;
+	void			*mlx;
+	void			*win;
+	void			*img;
+	char			*data_addr;
+	int				bits_per_pixel;
+	int				size_line;
+	int				endian;
 }					t_main;
 
 typedef struct		s_read

@@ -15,10 +15,20 @@ static	void	init_players(t_main *main)
 	}
 }
 
+void	put_player_in_sell(t_main *main, int start, int len, int player)
+{
+	while (len--)
+	{
+		main->cell[start].player = player;
+		start++;
+	}
+}
+
 void			init_area(t_main *main)
 {
 	int		constant;
 	int		start;
+	int 	size;
 	int		i;
 
 	constant = MEM_SIZE / main->players;
@@ -28,9 +38,11 @@ void			init_area(t_main *main)
 	{
 		if (main->player[i].code_size)
 		{
+			size = main->player[i].code_size;
 			ft_memcpy(main->area + (i * constant),
-					  main->player[i].content + start,
-					  main->player[i].code_size);
+					  main->player[i].content + start, size);
+			ft_printf("%d\n", main->player[i].code_size);
+			put_player_in_sell(main, i * constant, size, i + 1);
 		}
 		++i;
 	}
@@ -38,29 +50,28 @@ void			init_area(t_main *main)
 
 int		init_mlx(t_main *main)
 {
-	t_camera	camera;
-	t_mouse 	mouse;
-	
-	ft_bzero(&camera, sizeof(t_camera));
-	ft_bzero(&mouse, sizeof(t_mouse));
-	main->camera = &camera;
-	main->mouse = &mouse;
 	if (!(main->mlx = mlx_init()) ||
 		!(main->win = mlx_new_window(main->mlx, WIDTH, HEIGHT, "COREWAR")) ||
 		!(main->img = mlx_new_image(main->mlx, WIDTH, HEIGHT)))
 		return (0);
 	main->data_addr = mlx_get_data_addr(main->img, &main->bits_per_pixel,
 										&main->size_line, &main->endian);
-	main->camera->x_offset = WIDTH / 2;
-	main->camera->y_offset = HEIGHT / 2;
 	return (1);
 }
 
 void			*init()
 {
 	t_main	*main;
-
+	int 	i;
+	
+	i = 0;
 	main = (t_main*)smart_malloc(sizeof(t_main));
+	//ft_bzero(main->cell, sizeof(t_cell));
+//	while (i < MEM_SIZE)
+//	{
+//		main->cell[i].player = 0;
+//		i++;
+//	}
 	main->players = 0;
 	main->cursor = NULL;
 	main->last_cursor = NULL;
@@ -132,7 +143,7 @@ int			lem_close(void *main)
 int				main(int ac, char *av[])
 {
 	t_main	*main;
-
+	
 	main = init();
 	insert_params(main, ac, av);
 	init_area(main);
