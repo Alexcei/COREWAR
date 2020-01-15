@@ -5,16 +5,16 @@
 # include <mlx.h>
 # include "op.h"
 
-# define TEXT_COLOR			0xEAEAEA
+# define TEXT_COLOR			0xEdEdEd
 # define BACKGROUND			0x0
 # define CELL_DEF			0x808080
-# define CELL_PLAY_1		0x1155ff
-# define CELL_PLAY_2		0x55ff11
-# define CELL_PLAY_3		0xff1155
-# define CELL_PLAY_4		0xffff00
+# define CELL_PLAY_1		0x1050f0
+# define CELL_PLAY_2		0x60d020
+# define CELL_PLAY_3		0xf01050
+# define CELL_PLAY_4		0xd0b000
 
 # define LEN		64
-# define WIDTH 		2000
+# define WIDTH 		1800
 # define HEIGHT		1350
 # define SIZE 				HEIGHT * WIDTH
 
@@ -22,6 +22,7 @@
 # define DUMP "dump"
 # define DUMP_LEN 4
 # define HEADER_VAR 16
+# define COUNT_TOKENS 16
 
 # define START_NAME 4
 # define START_COMMENT (4 + PROG_NAME_LENGTH + 8)
@@ -31,6 +32,8 @@
 # define T_REG_CODE 1
 # define T_DIR_CODE 2
 # define T_IND_CODE 3
+
+# define REG_SYMBOL "Lls+-&|^JlsFllFa"
 
 typedef struct		s_player
 {
@@ -51,12 +54,16 @@ typedef struct		s_cursor
 	int				cycles;
 	char			types[3];
 	int				carry;
+	int				last_live_cycle;
+	int				operation_code;
+	int				cycles_to_wait;
 	struct s_cursor	*next;
 }					t_cursor;
 
 typedef struct		s_cell
 {
 	int 			player;
+	int 			cursor;
 	char 			value;
 	int 			color;
 }					t_cell;
@@ -69,7 +76,18 @@ typedef struct		s_main
 	struct s_cursor	*last_cursor;
 	char			*area;
 	int				dump;
-	int 			v;
+	int				cycle_to_die;
+	int				cycles_count;
+	int				current_cycle_to_die;
+	int				last_player_id;
+	int				lives_count;
+	int				cursors;
+	int				valids_count;
+	long 			ch;
+	int 			flag_a;
+	int 			flag_v;
+	
+	int 			i;
 	
 	t_cell			cell[MEM_SIZE];
 	int 			speed;
@@ -99,6 +117,10 @@ typedef struct		s_join
 	struct s_join	*next;
 }					t_join;
 
+extern				t_op g_instr[];
+typedef void		(*t_op_func) (t_main *main, t_cursor *cursor, char *area);
+extern 				t_op_func op_arr[];
+
 void			*smart_malloc(size_t how_much);
 void			die(const char *reason);
 void			insert_params(t_main *main, int count_args, char *params[]);
@@ -109,16 +131,23 @@ void			valid_filename(char *filename);
 int				valid_number(char *str);
 void			calc_ids(t_main *main);
 void			memory_read(char *area, int pos, void *dst, int size);
+int32_t			memory_read_rev_endian(char *area, int pos, int size);
 void			memory_write(char *area, int pos, void *src, int size);
 void			rev_endian(void *val, int size);
 void			check_file_content(t_main *main, t_read *reader);
 void			valid_file_size(char *str, int size);
 void			file_get_content(t_read *new, int ch);
+void			game_exec(t_main *main);
+void			*init();
 
 void			live(t_main *main, t_cursor *cursor, char *area);
 void			ld(t_main *main, t_cursor *cursor, char *area);
 void			st(t_main *main, t_cursor *cursor, char *area);
-
+void	add(t_main *main, t_cursor *cursor, char *area);
+void	sub(t_main *main, t_cursor *cursor, char *area);
+void			and(t_main *main, t_cursor *cursor, char *area);
+void			or(t_main *main, t_cursor *cursor, char *area);
+void			xor(t_main *main, t_cursor *cursor, char *area);
 void			zjmp(t_main *main, t_cursor *cursor, char *area);
 void			ldi(t_main *main, t_cursor *cursor, char *area);
 void			sti(t_main *main, t_cursor *cursor, char *area);
@@ -132,6 +161,8 @@ int				lem_hook_keydown(int key, t_main *main);
 int				lem_loop_key_hook(t_main *main);
 void			render(t_main *main);
 void			print_memory(const void *addr, size_t size);
+void			render_background_inst(t_main *main);
+void			render_inst(t_main *main);
 
 # define MAIN_PAD_ESC		53
 # define MAIN_PAD_R			15

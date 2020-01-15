@@ -329,6 +329,12 @@
 		<Unit filename="/Users/bpole/CLionProjects/corewar/ft_printf/parser.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/corewar/game.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/corewar/init.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/corewar/insert_params.c">
 			<Option target="corewar"/>
 		</Unit>
@@ -363,6 +369,9 @@
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/corewar/render.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/corewar/render_inst.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/corewar/util.c">

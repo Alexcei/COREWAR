@@ -1097,9 +1097,35 @@ CMakeFiles/corewar.dir/ft_printf/parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/ft_printf/parser.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/corewar/ft_printf/parser.c -o CMakeFiles/corewar.dir/ft_printf/parser.c.s
 
+CMakeFiles/corewar.dir/game.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/game.c.o: ../game.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/corewar.dir/game.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/game.c.o   -c /Users/bpole/CLionProjects/corewar/game.c
+
+CMakeFiles/corewar.dir/game.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/game.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bpole/CLionProjects/corewar/game.c > CMakeFiles/corewar.dir/game.c.i
+
+CMakeFiles/corewar.dir/game.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/game.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/corewar/game.c -o CMakeFiles/corewar.dir/game.c.s
+
+CMakeFiles/corewar.dir/init.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/init.c.o: ../init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/corewar.dir/init.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/init.c.o   -c /Users/bpole/CLionProjects/corewar/init.c
+
+CMakeFiles/corewar.dir/init.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/init.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bpole/CLionProjects/corewar/init.c > CMakeFiles/corewar.dir/init.c.i
+
+CMakeFiles/corewar.dir/init.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/init.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/corewar/init.c -o CMakeFiles/corewar.dir/init.c.s
+
 CMakeFiles/corewar.dir/insert_params.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/insert_params.c.o: ../insert_params.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/corewar.dir/insert_params.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/corewar.dir/insert_params.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/insert_params.c.o   -c /Users/bpole/CLionProjects/corewar/insert_params.c
 
 CMakeFiles/corewar.dir/insert_params.c.i: cmake_force
@@ -1112,7 +1138,7 @@ CMakeFiles/corewar.dir/insert_params.c.s: cmake_force
 
 CMakeFiles/corewar.dir/inst_1-4.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/inst_1-4.c.o: ../inst_1-4.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/corewar.dir/inst_1-4.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/corewar.dir/inst_1-4.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/inst_1-4.c.o   -c /Users/bpole/CLionProjects/corewar/inst_1-4.c
 
 CMakeFiles/corewar.dir/inst_1-4.c.i: cmake_force
@@ -1125,7 +1151,7 @@ CMakeFiles/corewar.dir/inst_1-4.c.s: cmake_force
 
 CMakeFiles/corewar.dir/inst_12-16.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/inst_12-16.c.o: ../inst_12-16.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/corewar.dir/inst_12-16.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/corewar.dir/inst_12-16.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/inst_12-16.c.o   -c /Users/bpole/CLionProjects/corewar/inst_12-16.c
 
 CMakeFiles/corewar.dir/inst_12-16.c.i: cmake_force
@@ -1138,7 +1164,7 @@ CMakeFiles/corewar.dir/inst_12-16.c.s: cmake_force
 
 CMakeFiles/corewar.dir/inst_5-8.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/inst_5-8.c.o: ../inst_5-8.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/corewar.dir/inst_5-8.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/corewar.dir/inst_5-8.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/inst_5-8.c.o   -c /Users/bpole/CLionProjects/corewar/inst_5-8.c
 
 CMakeFiles/corewar.dir/inst_5-8.c.i: cmake_force
@@ -1151,7 +1177,7 @@ CMakeFiles/corewar.dir/inst_5-8.c.s: cmake_force
 
 CMakeFiles/corewar.dir/inst_9-12.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/inst_9-12.c.o: ../inst_9-12.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/corewar.dir/inst_9-12.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/corewar.dir/inst_9-12.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/inst_9-12.c.o   -c /Users/bpole/CLionProjects/corewar/inst_9-12.c
 
 CMakeFiles/corewar.dir/inst_9-12.c.i: cmake_force
@@ -1164,7 +1190,7 @@ CMakeFiles/corewar.dir/inst_9-12.c.s: cmake_force
 
 CMakeFiles/corewar.dir/is_valid.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/is_valid.c.o: ../is_valid.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/corewar.dir/is_valid.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/corewar.dir/is_valid.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/is_valid.c.o   -c /Users/bpole/CLionProjects/corewar/is_valid.c
 
 CMakeFiles/corewar.dir/is_valid.c.i: cmake_force
@@ -1177,7 +1203,7 @@ CMakeFiles/corewar.dir/is_valid.c.s: cmake_force
 
 CMakeFiles/corewar.dir/main.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/corewar.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/corewar.dir/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/main.c.o   -c /Users/bpole/CLionProjects/corewar/main.c
 
 CMakeFiles/corewar.dir/main.c.i: cmake_force
@@ -1190,7 +1216,7 @@ CMakeFiles/corewar.dir/main.c.s: cmake_force
 
 CMakeFiles/corewar.dir/memory.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/memory.c.o: ../memory.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/corewar.dir/memory.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/corewar.dir/memory.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/memory.c.o   -c /Users/bpole/CLionProjects/corewar/memory.c
 
 CMakeFiles/corewar.dir/memory.c.i: cmake_force
@@ -1203,7 +1229,7 @@ CMakeFiles/corewar.dir/memory.c.s: cmake_force
 
 CMakeFiles/corewar.dir/player.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/player.c.o: ../player.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/corewar.dir/player.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/corewar.dir/player.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/player.c.o   -c /Users/bpole/CLionProjects/corewar/player.c
 
 CMakeFiles/corewar.dir/player.c.i: cmake_force
@@ -1216,7 +1242,7 @@ CMakeFiles/corewar.dir/player.c.s: cmake_force
 
 CMakeFiles/corewar.dir/print_memory.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/print_memory.c.o: ../print_memory.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/corewar.dir/print_memory.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/corewar.dir/print_memory.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/print_memory.c.o   -c /Users/bpole/CLionProjects/corewar/print_memory.c
 
 CMakeFiles/corewar.dir/print_memory.c.i: cmake_force
@@ -1229,7 +1255,7 @@ CMakeFiles/corewar.dir/print_memory.c.s: cmake_force
 
 CMakeFiles/corewar.dir/render.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/render.c.o: ../render.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/corewar.dir/render.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/corewar.dir/render.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/render.c.o   -c /Users/bpole/CLionProjects/corewar/render.c
 
 CMakeFiles/corewar.dir/render.c.i: cmake_force
@@ -1240,9 +1266,22 @@ CMakeFiles/corewar.dir/render.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/render.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/corewar/render.c -o CMakeFiles/corewar.dir/render.c.s
 
+CMakeFiles/corewar.dir/render_inst.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/render_inst.c.o: ../render_inst.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/corewar.dir/render_inst.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/render_inst.c.o   -c /Users/bpole/CLionProjects/corewar/render_inst.c
+
+CMakeFiles/corewar.dir/render_inst.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/render_inst.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bpole/CLionProjects/corewar/render_inst.c > CMakeFiles/corewar.dir/render_inst.c.i
+
+CMakeFiles/corewar.dir/render_inst.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/render_inst.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/corewar/render_inst.c -o CMakeFiles/corewar.dir/render_inst.c.s
+
 CMakeFiles/corewar.dir/util.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/util.c.o: ../util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/corewar.dir/util.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/corewar.dir/util.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/util.c.o   -c /Users/bpole/CLionProjects/corewar/util.c
 
 CMakeFiles/corewar.dir/util.c.i: cmake_force
@@ -1335,6 +1374,8 @@ corewar_OBJECTS = \
 "CMakeFiles/corewar.dir/ft_printf/output_u.c.o" \
 "CMakeFiles/corewar.dir/ft_printf/output_x.c.o" \
 "CMakeFiles/corewar.dir/ft_printf/parser.c.o" \
+"CMakeFiles/corewar.dir/game.c.o" \
+"CMakeFiles/corewar.dir/init.c.o" \
 "CMakeFiles/corewar.dir/insert_params.c.o" \
 "CMakeFiles/corewar.dir/inst_1-4.c.o" \
 "CMakeFiles/corewar.dir/inst_12-16.c.o" \
@@ -1346,6 +1387,7 @@ corewar_OBJECTS = \
 "CMakeFiles/corewar.dir/player.c.o" \
 "CMakeFiles/corewar.dir/print_memory.c.o" \
 "CMakeFiles/corewar.dir/render.c.o" \
+"CMakeFiles/corewar.dir/render_inst.c.o" \
 "CMakeFiles/corewar.dir/util.c.o"
 
 # External object files for target corewar
@@ -1431,6 +1473,8 @@ corewar: CMakeFiles/corewar.dir/ft_printf/output_persent.c.o
 corewar: CMakeFiles/corewar.dir/ft_printf/output_u.c.o
 corewar: CMakeFiles/corewar.dir/ft_printf/output_x.c.o
 corewar: CMakeFiles/corewar.dir/ft_printf/parser.c.o
+corewar: CMakeFiles/corewar.dir/game.c.o
+corewar: CMakeFiles/corewar.dir/init.c.o
 corewar: CMakeFiles/corewar.dir/insert_params.c.o
 corewar: CMakeFiles/corewar.dir/inst_1-4.c.o
 corewar: CMakeFiles/corewar.dir/inst_12-16.c.o
@@ -1442,10 +1486,11 @@ corewar: CMakeFiles/corewar.dir/memory.c.o
 corewar: CMakeFiles/corewar.dir/player.c.o
 corewar: CMakeFiles/corewar.dir/print_memory.c.o
 corewar: CMakeFiles/corewar.dir/render.c.o
+corewar: CMakeFiles/corewar.dir/render_inst.c.o
 corewar: CMakeFiles/corewar.dir/util.c.o
 corewar: CMakeFiles/corewar.dir/build.make
 corewar: CMakeFiles/corewar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Linking C executable corewar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Linking C executable corewar"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/corewar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

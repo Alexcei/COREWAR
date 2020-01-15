@@ -247,6 +247,18 @@ CMakeFiles/corewar.dir/ft_printf/parser.c.o
  /Users/bpole/CLionProjects/corewar/ft_printf/ft_printf.h
  /Users/bpole/CLionProjects/corewar/ft_printf/libft/libft.h
  /Users/bpole/CLionProjects/corewar/ft_printf/parser.c
+CMakeFiles/corewar.dir/game.c.o
+ /Users/bpole/CLionProjects/corewar/corewar.h
+ /Users/bpole/CLionProjects/corewar/ft_printf/ft_printf.h
+ /Users/bpole/CLionProjects/corewar/ft_printf/libft/libft.h
+ /Users/bpole/CLionProjects/corewar/game.c
+ /Users/bpole/CLionProjects/corewar/op.h
+CMakeFiles/corewar.dir/init.c.o
+ /Users/bpole/CLionProjects/corewar/corewar.h
+ /Users/bpole/CLionProjects/corewar/ft_printf/ft_printf.h
+ /Users/bpole/CLionProjects/corewar/ft_printf/libft/libft.h
+ /Users/bpole/CLionProjects/corewar/init.c
+ /Users/bpole/CLionProjects/corewar/op.h
 CMakeFiles/corewar.dir/insert_params.c.o
  /Users/bpole/CLionProjects/corewar/corewar.h
  /Users/bpole/CLionProjects/corewar/ft_printf/ft_printf.h
@@ -266,7 +278,11 @@ CMakeFiles/corewar.dir/inst_12-16.c.o
  /Users/bpole/CLionProjects/corewar/inst_12-16.c
  /Users/bpole/CLionProjects/corewar/op.h
 CMakeFiles/corewar.dir/inst_5-8.c.o
+ /Users/bpole/CLionProjects/corewar/corewar.h
+ /Users/bpole/CLionProjects/corewar/ft_printf/ft_printf.h
+ /Users/bpole/CLionProjects/corewar/ft_printf/libft/libft.h
  /Users/bpole/CLionProjects/corewar/inst_5-8.c
+ /Users/bpole/CLionProjects/corewar/op.h
 CMakeFiles/corewar.dir/inst_9-12.c.o
  /Users/bpole/CLionProjects/corewar/corewar.h
  /Users/bpole/CLionProjects/corewar/ft_printf/ft_printf.h
@@ -309,6 +325,12 @@ CMakeFiles/corewar.dir/render.c.o
  /Users/bpole/CLionProjects/corewar/ft_printf/libft/libft.h
  /Users/bpole/CLionProjects/corewar/op.h
  /Users/bpole/CLionProjects/corewar/render.c
+CMakeFiles/corewar.dir/render_inst.c.o
+ /Users/bpole/CLionProjects/corewar/corewar.h
+ /Users/bpole/CLionProjects/corewar/ft_printf/ft_printf.h
+ /Users/bpole/CLionProjects/corewar/ft_printf/libft/libft.h
+ /Users/bpole/CLionProjects/corewar/op.h
+ /Users/bpole/CLionProjects/corewar/render_inst.c
 CMakeFiles/corewar.dir/util.c.o
  /Users/bpole/CLionProjects/corewar/corewar.h
  /Users/bpole/CLionProjects/corewar/ft_printf/ft_printf.h

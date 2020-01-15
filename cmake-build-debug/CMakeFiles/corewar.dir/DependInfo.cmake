@@ -84,6 +84,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bpole/CLionProjects/corewar/ft_printf/output_u.c" "/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles/corewar.dir/ft_printf/output_u.c.o"
   "/Users/bpole/CLionProjects/corewar/ft_printf/output_x.c" "/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles/corewar.dir/ft_printf/output_x.c.o"
   "/Users/bpole/CLionProjects/corewar/ft_printf/parser.c" "/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles/corewar.dir/ft_printf/parser.c.o"
+  "/Users/bpole/CLionProjects/corewar/game.c" "/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles/corewar.dir/game.c.o"
+  "/Users/bpole/CLionProjects/corewar/init.c" "/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles/corewar.dir/init.c.o"
   "/Users/bpole/CLionProjects/corewar/insert_params.c" "/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles/corewar.dir/insert_params.c.o"
   "/Users/bpole/CLionProjects/corewar/inst_1-4.c" "/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles/corewar.dir/inst_1-4.c.o"
   "/Users/bpole/CLionProjects/corewar/inst_12-16.c" "/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles/corewar.dir/inst_12-16.c.o"
@@ -95,6 +97,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bpole/CLionProjects/corewar/player.c" "/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles/corewar.dir/player.c.o"
   "/Users/bpole/CLionProjects/corewar/print_memory.c" "/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles/corewar.dir/print_memory.c.o"
   "/Users/bpole/CLionProjects/corewar/render.c" "/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles/corewar.dir/render.c.o"
+  "/Users/bpole/CLionProjects/corewar/render_inst.c" "/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles/corewar.dir/render_inst.c.o"
   "/Users/bpole/CLionProjects/corewar/util.c" "/Users/bpole/CLionProjects/corewar/cmake-build-debug/CMakeFiles/corewar.dir/util.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

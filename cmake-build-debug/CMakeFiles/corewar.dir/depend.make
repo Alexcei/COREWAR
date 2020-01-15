@@ -247,6 +247,18 @@ CMakeFiles/corewar.dir/ft_printf/parser.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/corewar.dir/ft_printf/parser.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/corewar.dir/ft_printf/parser.c.o: ../ft_printf/parser.c
 
+CMakeFiles/corewar.dir/game.c.o: ../corewar.h
+CMakeFiles/corewar.dir/game.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/corewar.dir/game.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/corewar.dir/game.c.o: ../game.c
+CMakeFiles/corewar.dir/game.c.o: ../op.h
+
+CMakeFiles/corewar.dir/init.c.o: ../corewar.h
+CMakeFiles/corewar.dir/init.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/corewar.dir/init.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/corewar.dir/init.c.o: ../init.c
+CMakeFiles/corewar.dir/init.c.o: ../op.h
+
 CMakeFiles/corewar.dir/insert_params.c.o: ../corewar.h
 CMakeFiles/corewar.dir/insert_params.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/corewar.dir/insert_params.c.o: ../ft_printf/libft/libft.h
@@ -265,7 +277,11 @@ CMakeFiles/corewar.dir/inst_12-16.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/corewar.dir/inst_12-16.c.o: ../inst_12-16.c
 CMakeFiles/corewar.dir/inst_12-16.c.o: ../op.h
 
+CMakeFiles/corewar.dir/inst_5-8.c.o: ../corewar.h
+CMakeFiles/corewar.dir/inst_5-8.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/corewar.dir/inst_5-8.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/corewar.dir/inst_5-8.c.o: ../inst_5-8.c
+CMakeFiles/corewar.dir/inst_5-8.c.o: ../op.h
 
 CMakeFiles/corewar.dir/inst_9-12.c.o: ../corewar.h
 CMakeFiles/corewar.dir/inst_9-12.c.o: ../ft_printf/ft_printf.h
@@ -308,6 +324,12 @@ CMakeFiles/corewar.dir/render.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/corewar.dir/render.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/corewar.dir/render.c.o: ../op.h
 CMakeFiles/corewar.dir/render.c.o: ../render.c
+
+CMakeFiles/corewar.dir/render_inst.c.o: ../corewar.h
+CMakeFiles/corewar.dir/render_inst.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/corewar.dir/render_inst.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/corewar.dir/render_inst.c.o: ../op.h
+CMakeFiles/corewar.dir/render_inst.c.o: ../render_inst.c
 
 CMakeFiles/corewar.dir/util.c.o: ../corewar.h
 CMakeFiles/corewar.dir/util.c.o: ../ft_printf/ft_printf.h

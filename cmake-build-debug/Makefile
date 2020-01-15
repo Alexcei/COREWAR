@@ -2283,6 +2283,60 @@ ft_printf/parser.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/ft_printf/parser.c.s
 .PHONY : ft_printf/parser.c.s
 
+game.o: game.c.o
+
+.PHONY : game.o
+
+# target to build an object file
+game.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/game.c.o
+.PHONY : game.c.o
+
+game.i: game.c.i
+
+.PHONY : game.i
+
+# target to preprocess a source file
+game.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/game.c.i
+.PHONY : game.c.i
+
+game.s: game.c.s
+
+.PHONY : game.s
+
+# target to generate assembly for a file
+game.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/game.c.s
+.PHONY : game.c.s
+
+init.o: init.c.o
+
+.PHONY : init.o
+
+# target to build an object file
+init.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/init.c.o
+.PHONY : init.c.o
+
+init.i: init.c.i
+
+.PHONY : init.i
+
+# target to preprocess a source file
+init.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/init.c.i
+.PHONY : init.c.i
+
+init.s: init.c.s
+
+.PHONY : init.s
+
+# target to generate assembly for a file
+init.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/init.c.s
+.PHONY : init.c.s
+
 insert_params.o: insert_params.c.o
 
 .PHONY : insert_params.o
@@ -2580,6 +2634,33 @@ render.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/render.c.s
 .PHONY : render.c.s
 
+render_inst.o: render_inst.c.o
+
+.PHONY : render_inst.o
+
+# target to build an object file
+render_inst.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/render_inst.c.o
+.PHONY : render_inst.c.o
+
+render_inst.i: render_inst.c.i
+
+.PHONY : render_inst.i
+
+# target to preprocess a source file
+render_inst.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/render_inst.c.i
+.PHONY : render_inst.c.i
+
+render_inst.s: render_inst.c.s
+
+.PHONY : render_inst.s
+
+# target to generate assembly for a file
+render_inst.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/render_inst.c.s
+.PHONY : render_inst.c.s
+
 util.o: util.c.o
 
 .PHONY : util.o
@@ -2856,6 +2937,12 @@ help:
 	@echo "... ft_printf/parser.o"
 	@echo "... ft_printf/parser.i"
 	@echo "... ft_printf/parser.s"
+	@echo "... game.o"
+	@echo "... game.i"
+	@echo "... game.s"
+	@echo "... init.o"
+	@echo "... init.i"
+	@echo "... init.s"
 	@echo "... insert_params.o"
 	@echo "... insert_params.i"
 	@echo "... insert_params.s"
@@ -2889,6 +2976,9 @@ help:
 	@echo "... render.o"
 	@echo "... render.i"
 	@echo "... render.s"
+	@echo "... render_inst.o"
+	@echo "... render_inst.i"
+	@echo "... render_inst.s"
 	@echo "... util.o"
 	@echo "... util.i"
 	@echo "... util.s"
