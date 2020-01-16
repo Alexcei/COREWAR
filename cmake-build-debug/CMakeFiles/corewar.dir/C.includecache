@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/bpole/CLionProjects/corewar/control.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
 /Users/bpole/CLionProjects/corewar/corewar.h
 ft_printf/ft_printf.h
 /Users/bpole/CLionProjects/corewar/ft_printf/ft_printf.h
@@ -13,6 +17,14 @@ mlx.h
 -
 op.h
 /Users/bpole/CLionProjects/corewar/op.h
+
+/Users/bpole/CLionProjects/corewar/corewar_loop.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
+/Users/bpole/CLionProjects/corewar/file_get_content.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
 
 /Users/bpole/CLionProjects/corewar/ft_printf/ft_printf.h
 stdarg.h
@@ -30,9 +42,65 @@ unistd.h
 fcntl.h
 /Users/bpole/CLionProjects/corewar/ft_printf/libft/fcntl.h
 
+/Users/bpole/CLionProjects/corewar/game.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
+/Users/bpole/CLionProjects/corewar/init.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
+/Users/bpole/CLionProjects/corewar/insert_params.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
+/Users/bpole/CLionProjects/corewar/inst_1-4.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
+/Users/bpole/CLionProjects/corewar/inst_12-16.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
+/Users/bpole/CLionProjects/corewar/inst_5-8.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
+/Users/bpole/CLionProjects/corewar/inst_9-12.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
+/Users/bpole/CLionProjects/corewar/is_valid.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
+/Users/bpole/CLionProjects/corewar/main.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
+/Users/bpole/CLionProjects/corewar/memory.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
 /Users/bpole/CLionProjects/corewar/op.h
 
+/Users/bpole/CLionProjects/corewar/player.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
+/Users/bpole/CLionProjects/corewar/print_memory.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
+/Users/bpole/CLionProjects/corewar/render.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
 /Users/bpole/CLionProjects/corewar/render_inst.c
+corewar.h
+/Users/bpole/CLionProjects/corewar/corewar.h
+
+/Users/bpole/CLionProjects/corewar/util.c
 corewar.h
 /Users/bpole/CLionProjects/corewar/corewar.h
 

@@ -2,7 +2,10 @@
 
 void			help(void)
 {
-	die("Here help");
+	die("Usage: ./corewar [-a] [-v] [-n <num>] <champion.cor> <...>\n \
+	   -a        : Prints output from \"aff\" (Default is to hide it)\n \
+	   -v        : Visualization\n \
+	   -n  <num> : Set <num> of the next player\n");
 }
 
 static	void	insert_player(t_main *main, char *player, int n)
@@ -54,25 +57,39 @@ static	void	analysis(t_main *main)
 	calc_ids(main);
 }
 
+int 	parse_flag_a_v(t_main *main, char *param)
+{
+	if (!ft_strcmp(param, "-a"))
+	{
+		main->flag_a = 1;
+		return (1);
+	}
+	else if (!ft_strcmp(param, "-v"))
+	{
+		main->flag_v = 1;
+		return (1);
+	}
+	return (0);
+}
+
 void			insert_params(t_main *main, int count_args, char *params[])
 {
 	int		i;
 
 	if (count_args < 3)
 		help();
-	i = 1;
-	while (i < count_args)
+	i = 0;
+	while (++i < count_args)
 	{
+		if (parse_flag_a_v(main, params[i]))
+			continue ;
 		if (params[i][0] == '-')
 		{
 			insert_flag(main, count_args, params, i);
 			i += params[i][1] == 'n' ? 2 : 1;
 		}
 		else
-		{
 			insert_player(main, params[i], 0);
-		}
-		++i;
 	}
 	analysis(main);
 }

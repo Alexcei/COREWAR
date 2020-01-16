@@ -3,11 +3,15 @@
 void    live(t_main *main, t_cursor *cursor, char *area)
 {
 	int32_t	val;
-
+	
+	//ft_printf("1\n");
 	memory_read(area, cursor->pos + 1, &val, 4);
 	rev_endian(&val, 4);
+	//ft_printf("2\n");
+	//ft_printf("%d\n", val);
 	if (-val <= main->players)
 		main->player[-val].current_lives++;
+	main->move = 4;
 }
 
 void	ld(t_main *main, t_cursor *cursor, char *area)
@@ -22,6 +26,7 @@ void	ld(t_main *main, t_cursor *cursor, char *area)
 			return ;
 		memory_read(area, cursor->pos + 2, &cursor->reg[regnum - 1], 4);
 		cursor->carry = !cursor->reg[regnum - 1];
+		main->move = 6;
 		return ;
 	}
 	memory_read(area, cursor->pos + 2, &addr, 2);
@@ -30,6 +35,7 @@ void	ld(t_main *main, t_cursor *cursor, char *area)
 	memory_read(area, cursor->pos + addr % IDX_MOD,
 				&cursor->reg[regnum - 1], 4);
 	cursor->carry = !cursor->reg[regnum - 1];
+	main->move = 6;  // 4 должно быть!!!!
 }
 
 void	st(t_main *main, t_cursor *cursor, char *area)
@@ -45,14 +51,16 @@ void	st(t_main *main, t_cursor *cursor, char *area)
 		if (regnum1 > 16 || regnum2 > 16 || !regnum1 || !regnum2)
 			return ;
 		cursor->reg[regnum2 - 1] = cursor->reg[regnum1 - 1];
+		main->move = 3;
 		return ;
 	}
 	if (regnum1 > 16 ||	!regnum1)
 		return ;
 	memory_read(area, cursor->pos + 3, &addr, 2);
 	rev_endian(&addr, 2);
-	memory_write(area, cursor->pos + addr % IDX_MOD,
+	memory_write(main, main->cell[cursor->pos].player, area, cursor->pos + addr % IDX_MOD,
 				 &cursor->reg[regnum1 - 1], 2);
+	main->move = 4;
 }
 
 void	add(t_main *main, t_cursor *cursor, char *area)

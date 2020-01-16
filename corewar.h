@@ -5,13 +5,14 @@
 # include <mlx.h>
 # include "op.h"
 
-# define TEXT_COLOR			0xEdEdEd
+# define TEXT_COLOR			0xffffff
 # define BACKGROUND			0x0
 # define CELL_DEF			0x808080
-# define CELL_PLAY_1		0x1050f0
+# define CELL_PLAY_1		0x0000ff
 # define CELL_PLAY_2		0x60d020
 # define CELL_PLAY_3		0xf01050
 # define CELL_PLAY_4		0xd0b000
+# define CURSOR				0x777777
 
 # define LEN		64
 # define WIDTH 		1800
@@ -83,12 +84,10 @@ typedef struct		s_main
 	int				lives_count;
 	int				cursors;
 	int				valids_count;
-	long 			ch;
 	int 			flag_a;
 	int 			flag_v;
 	
-	int 			i;
-	
+	int 			move;
 	t_cell			cell[MEM_SIZE];
 	int 			speed;
 	int				width;
@@ -132,7 +131,7 @@ int				valid_number(char *str);
 void			calc_ids(t_main *main);
 void			memory_read(char *area, int pos, void *dst, int size);
 int32_t			memory_read_rev_endian(char *area, int pos, int size);
-void			memory_write(char *area, int pos, void *src, int size);
+void			memory_write(t_main *main, int player, char *area, int pos, void *src, int size);
 void			rev_endian(void *val, int size);
 void			check_file_content(t_main *main, t_read *reader);
 void			valid_file_size(char *str, int size);
@@ -143,8 +142,8 @@ void			*init();
 void			live(t_main *main, t_cursor *cursor, char *area);
 void			ld(t_main *main, t_cursor *cursor, char *area);
 void			st(t_main *main, t_cursor *cursor, char *area);
-void	add(t_main *main, t_cursor *cursor, char *area);
-void	sub(t_main *main, t_cursor *cursor, char *area);
+void			add(t_main *main, t_cursor *cursor, char *area);
+void			sub(t_main *main, t_cursor *cursor, char *area);
 void			and(t_main *main, t_cursor *cursor, char *area);
 void			or(t_main *main, t_cursor *cursor, char *area);
 void			xor(t_main *main, t_cursor *cursor, char *area);

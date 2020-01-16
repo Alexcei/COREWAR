@@ -5,10 +5,23 @@ static	void	asm_functions(t_main *main, t_cursor *cursor)
 	// СЮДА ВСЕГДА ПРИДЕТ ПРАВИЛЬНЫЙ КОД ОПЕРАЦИИ (1 - 16)
 	// вызов функций ассембли  и мы ЗДЕСЬ ДВИГАЕМ ПОЗИЦИЮ КАРЕТКИ
 	// cursor->pos должен сдвинуться
-	cursor->operation_code = 12;
-	op_arr[cursor->operation_code - 1](main, cursor, main->area);
-	cursor->pos = (cursor->pos + 1) % MEM_SIZE;
-	return ;
+	
+	int 	inst;
+	
+	inst = cursor->operation_code - 1;
+	if (inst == 0)
+		live(main, cursor, main->area);
+	else if (inst == 1)
+		ld(main, cursor, main->area);
+	else if (inst == 2)
+		st(main, cursor, main->area);
+	else if (inst == 8)
+		zjmp(main, cursor, main->area);
+	else if (inst == 11)
+		op_fork(main, cursor, main->area);
+	//op_arr[cursor->operation_code - 1](main, cursor, main->area);
+	cursor->pos = (cursor->pos + 1 + main->move) % MEM_SIZE;
+	cursor->operation_code = 0;
 }
 
 static	int		is_invalid_move(t_main *main, t_cursor *cursor, int32_t tmp)

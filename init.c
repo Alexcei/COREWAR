@@ -13,7 +13,7 @@ t_op	g_instr[COUNT_TOKENS + 1] =
 				{"zjmp", 1, {T_DIR}, 9, 20, "jump if zero", 0, 1},
 				{"ldi", 3, {T_REG | T_DIR | T_IND, T_DIR | T_REG, T_REG}, 10, 25, "load index", 1, 1},
 				{"sti", 3, {T_REG, T_REG | T_DIR | T_IND, T_DIR | T_REG}, 11, 25, "store index", 1, 1},
-				{"fork", 1, {T_DIR}, 12, 800, "fork", 0, 1},
+				{"fork", 1, {T_DIR}, 12, 80, "fork", 0, 1},
 				{"lld", 2, {T_DIR | T_IND, T_REG}, 13, 10, "long load", 1, 0},
 				{"lldi", 3, {T_REG | T_DIR | T_IND, T_DIR | T_REG, T_REG}, 14, 50, "long load index", 1, 1},
 				{"lfork", 1, {T_DIR}, 15, 1000, "long fork", 0, 1},
@@ -44,26 +44,13 @@ static	void	init_players(t_main *main)
 	}
 }
 
-int		init_mlx(t_main *main)
-{
-	if (!(main->mlx = mlx_init()) ||
-		!(main->win = mlx_new_window(main->mlx, WIDTH, HEIGHT, "COREWAR")) ||
-		!(main->img = mlx_new_image(main->mlx, WIDTH, HEIGHT)))
-		return (0);
-	main->data_addr = mlx_get_data_addr(main->img, &main->bits_per_pixel,
-										&main->size_line, &main->endian);
-	return (1);
-}
-
 void			*init()
 {
 	t_main	*main;
 	
 	main = (t_main*)smart_malloc(sizeof(t_main));
 	
-	main->i = 20;
 	main->cycle_to_die = 50;
-	main->flag_v = 1;    // add parse v
 	
 	ft_bzero(main->cell, sizeof(t_cell));
 	main->players = 0;
@@ -74,7 +61,5 @@ void			*init()
 	main->area[MEM_SIZE] = 0;
 	main->dump = 0;
 	init_players(main);
-	if (main->flag_v)
-		init_mlx(main);
 	return ((void*)main);
 }

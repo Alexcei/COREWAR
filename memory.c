@@ -24,7 +24,7 @@ int32_t		memory_read_rev_endian(char *area, int pos, int size)
 	return (res);
 }
 
-void	memory_write(char *area, int pos, void *src, int size)
+void	memory_write(t_main *main, int player, char *area, int pos, void *src, int size)
 {
 	int		i;
 	char	*csrc;
@@ -33,7 +33,8 @@ void	memory_write(char *area, int pos, void *src, int size)
 	csrc = (char *)src;
 	while (i < size)
 	{
-		area[(pos + i) % MEM_SIZE] = csrc[i];
+		area[(pos + i) % MEM_SIZE] = 1;		//  csrc[i]
+		main->cell[(pos + i) % MEM_SIZE].player = player;
 		i++;
 	}
 }

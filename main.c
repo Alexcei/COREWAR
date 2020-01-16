@@ -80,16 +80,29 @@ static int			cor_close(void *main)
 	exit(EXIT_SUCCESS);
 }
 
+int		init_mlx(t_main *main)
+{
+	if (!(main->mlx = mlx_init()) ||
+		!(main->win = mlx_new_window(main->mlx, WIDTH, HEIGHT, "COREWAR")) ||
+		!(main->img = mlx_new_image(main->mlx, WIDTH, HEIGHT)))
+		return (0);
+	main->data_addr = mlx_get_data_addr(main->img, &main->bits_per_pixel,
+										&main->size_line, &main->endian);
+	return (1);
+}
+
 int				main(int ac, char *av[])
 {
 	t_main	*main;
 	
 	main = init();
 	insert_params(main, ac, av);
+	if (main->flag_v)
+		init_mlx(main);
 	init_area(main);
 	init_cursors(main);
 	
-	main->ch = 0;
+	main->speed = 5;
 	
 	if (main->flag_v)
 	{
@@ -100,7 +113,7 @@ int				main(int ac, char *av[])
 	}
 	else
 	{
-		while (main->i-- > 0 && main->cursor && main->cycle_to_die > 0)
+		while (main->cursor && main->cycle_to_die > 0)
 			game_exec(main);
 	}
 	//print_memory(main->area, MEM_SIZE);
